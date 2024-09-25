@@ -10,9 +10,9 @@ export default function ContactMe() {
     emailjs
       .sendForm(
         "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "BFq3o23QVFqug5K0w", // Replace with your EmailJS template ID
         form.current,
-        "YOUR_USER_ID" // Replace with your EmailJS public key (user ID)
+        "BFq3o23QVFqug5K0w" // Replace with your EmailJS public key (user ID)
       )
       .then(
         (result) => {
@@ -32,7 +32,7 @@ export default function ContactMe() {
         <p className="sub--title">Get In Touch</p>
         <h2>Contact Me</h2>
         <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
+        Got a project or question? Let's get in touch—I'm always excited to connect and collaborate!
         </p>
       </div>
       <form ref={form} onSubmit={sendEmail} className="contact--form--container">
